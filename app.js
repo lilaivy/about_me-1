@@ -50,8 +50,23 @@ if (thirdAnswer === 'yes' || thirdAnswer === 'y') {
 
 console.log('\n'); 
 
+var fourthAnswer = prompt('Has Yuval ever been published?', 'Please enter "yes" or "no"').toLowerCase();
+console.log('4)Asked user if Yuval has ever been published (true).');
+
+if (fourthAnswer === 'yes' || fourthAnswer === 'y') {
+  confirm('That is correct! Yuval wrote short fiction under the alias The Marquis de Sheric.');
+  console.log('User answered correctly!');
+} else if (fourthAnswer === 'no' || fourthAnswer === 'n') {
+  confirm('That is incorrect. Yuval wrote short fiction under the alias The Marquis de Sheric. HAVE SOME RESPECT.');
+  console.log('User answered incorrectly!');
+} else {
+  confirm('Please enter a valid "yes" or "no" response.');
+  console.log('User responded unintelligbly! For shame.');
+}
+
+console.log('\n'); 
+
+
 
 
 //are there two of yuval?
-
-//has yuval's work ever been published? 
