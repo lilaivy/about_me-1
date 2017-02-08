@@ -51,7 +51,7 @@ if (thirdAnswer === 'yes' || thirdAnswer === 'y') {
 console.log('\n'); 
 
 var fourthAnswer = prompt('Has Yuval ever been published?', 'Please enter "yes" or "no"').toLowerCase();
-console.log('4)Asked user if Yuval has ever been published (true).');
+console.log('4) Asked user if Yuval has ever been published (true).');
 
 if (fourthAnswer === 'yes' || fourthAnswer === 'y') {
   confirm('That is correct! Yuval wrote short fiction under the alias The Marquis de Sheric.');
@@ -66,7 +66,16 @@ if (fourthAnswer === 'yes' || fourthAnswer === 'y') {
 
 console.log('\n'); 
 
+var fifthAnswer = prompt('Has Yuval met some of the biggest names in CS/programming?', 'Please enter "yes" or "no"').toLowerCase();
+console.log('5) Asked user if Yuval has met some of the biggest names in CS/programming (true).');
 
-
-
-//are there two of yuval?
+if (fifthAnswer === 'yes' || fifthAnswer === 'y') {
+  confirm('That is correct! Yuval used to work for Specimen Magazine, where he was lucky enough to shoehorn his way into the Turing Award Ceremony. He interviewed the recipient of the award, Judea Pearl, as well as Leonard Kleinrock.');
+  console.log('User answered correctly!');
+} else if (fifthAnswer === 'no' || fifthAnswer === 'n') {
+  confirm();
+  console.log('How rude! Yuval used to work for Specimen Magazine, where he was lucky enough to shoehorn his way into the Turing Award Ceremony. He interviewed the recipient of the award, Judea Pearl, as well as Leonard Kleinrock.');
+} else {
+  confirm('Please enter a valid "yes" or "no" response.');
+  console.log('User responded unintelligbly! For shame.');
+}
