@@ -73,8 +73,8 @@ if (fifthAnswer === 'yes' || fifthAnswer === 'y') {
   confirm('That is correct! Yuval used to work for Specimen Magazine, where he was lucky enough to shoehorn his way into the Turing Award Ceremony. He interviewed the recipient of the award, Judea Pearl, as well as Leonard Kleinrock.');
   console.log('User answered correctly!');
 } else if (fifthAnswer === 'no' || fifthAnswer === 'n') {
-  confirm();
-  console.log('How rude! Yuval used to work for Specimen Magazine, where he was lucky enough to shoehorn his way into the Turing Award Ceremony. He interviewed the recipient of the award, Judea Pearl, as well as Leonard Kleinrock.');
+  confirm('How rude! Yuval used to work for Specimen Magazine, where he was lucky enough to shoehorn his way into the Turing Award Ceremony. He interviewed the recipient of the award, Judea Pearl, as well as Leonard Kleinrock.');
+  console.log('User answered incorrectly!');
 } else {
   confirm('Please enter a valid "yes" or "no" response.');
   console.log('User responded unintelligbly! For shame.');
