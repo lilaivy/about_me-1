@@ -16,7 +16,7 @@ if (firstAnswer === 'yes' || firstAnswer === 'y') {
   console.log('User responded unintelligbly! For shame.');
 }
 
-console.log('\n'); 
+console.log('\n');
 
 var secondAnswer = prompt('Does Yuval have a degree from a higher learning institution?', 'Please enter "yes" or "no"').toLowerCase();
 console.log('2) Asked user if Yuval has a degree from a higher learning institution (false).');
@@ -32,7 +32,7 @@ if (secondAnswer === 'yes' || secondAnswer === 'y') {
   console.log('User responded unintelligbly! For shame.');
 }
 
-console.log('\n'); 
+console.log('\n');
 
 var thirdAnswer = prompt('Has Yuval been to the magical land of India?', 'Please enter "yes" or "no"').toLowerCase();
 console.log('3) Asked user if Yuval has been to India (true).');
@@ -48,7 +48,7 @@ if (thirdAnswer === 'yes' || thirdAnswer === 'y') {
   console.log('User responded unintelligbly! For shame.');
 }
 
-console.log('\n'); 
+console.log('\n');
 
 var fourthAnswer = prompt('Has Yuval ever been published?', 'Please enter "yes" or "no"').toLowerCase();
 console.log('4) Asked user if Yuval has ever been published (true).');
@@ -64,7 +64,7 @@ if (fourthAnswer === 'yes' || fourthAnswer === 'y') {
   console.log('User responded unintelligbly! For shame.');
 }
 
-console.log('\n'); 
+console.log('\n');
 
 var fifthAnswer = prompt('Has Yuval met some of the biggest names in CS/programming?', 'Please enter "yes" or "no"').toLowerCase();
 console.log('5) Asked user if Yuval has met some of the biggest names in CS/programming (true).');
