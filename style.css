@@ -1,13 +1,35 @@
+body {
+  background-color: rgb(66, 133, 244);
+}
+
 div {
   text-align: center;
+  outline: 2px solid #000;
+  width: 40%;
+  margin: auto;
+  margin-top: 5%;
+  padding: 1em;
+  font-family: Helvetica;
+  background-color: #eee;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.3em;
+  font-style: italic;
+  color: rgb(133, 66, 244);
 }
 
 ul {
-  width: 400px;
+  width: 40%;
   margin: auto;
 }
 
 li {
   text-align: left;
   margin: 1em 0;
+  list-style-type: square;
 }
