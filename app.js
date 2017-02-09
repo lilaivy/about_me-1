@@ -9,7 +9,7 @@ console.log('\n');
 
 //make default message for else console.log statement to keep it DRY
 
-
+/*
 var firstAnswer = prompt('Thanks, ' + name + '!' + ' Is Yuval an Israeli citizen?').toLowerCase();
 console.log('1) Asked ' + name + ' if Yuval is an Israeli citizen (true).');
 
@@ -92,7 +92,7 @@ console.log('\n');
 
 
 //sixth question
-alert('Please guess the number I am thinking of. You will have four opportunities to guess this number.');
+alert('Can you guess the number I am thinking of? You will have four opportunities to guess this number.');
 var myNum = 73;
 console.log('Asked ' + name + ' to guess my number (' + myNum + ').');
 
@@ -126,6 +126,56 @@ for (var i = 0; i < 4; i++) {
 
   if (i === 3) {
     alert('You are all out of guesses :( Better luck next time!');
+  }
+}
+
+console.log('\n');
+
+*/
+// As a developer, I want to add a seventh question to my guessing game that has multiple possible correct answers that are stored in an array. For instance, "Can you guess a state that I have lived in besides Washington?", so that even more of my programming skills are showcased. For now, I will structure this question so that the user has six tries to get a single correct answer, and upon using up those tries OR getting a correct answer, displays a message to the user indicating all of the possible correct answers.
+
+// As a developer, I want to keep a tally of the total number of correct answers given by the user, and at the end of the game, tell the user how well they did with a personalized custom message that includes the number of correct answers and also addresses the user by name, e.g. "You got 4 out of 7 questions correct, Bobbi! Better luck next time."
+
+
+//seventh question
+
+var states = ['Pennsylvania', 'California', 'Arizona', 'Washington', 'Virginia', 'Ohio'];
+alert('Can you guess a state Yuval has visited, aside from Oregon? You will have six opportunities to guess.');
+console.log('Asked ' + name + ' to guess a state Yuval has visited.');
+console.log('(States Yuval has visited: ' + states[0] + ', ' + states[1] + ', ' + states[2] + ', ' + states[3] + ', ' + states[4] + ', and ' + states[5] + ')');
+
+console.log('\n');
+
+var guesses = 0;
+var isCorrect = false;
+
+var incorrectMsg = 'That is incorrect, ' + name + '. Please guess again.';
+
+while (isCorrect !== true) {
+  guesses++;
+  var stateGuess = prompt('Please enter your guess here: ').toLowerCase();
+  stateGuess = stateGuess[0].toUpperCase() + stateGuess.slice(1);
+
+  for (var j = 0; j < states.length; j++) {
+    if (stateGuess === states[j]) {
+      isCorrect = true;
+    }
+  }
+
+  if (guesses === 6) {
+    isCorrect = true;
+    console.log(name + ' did not guess correctly within 6 attempts.');
+    alert('You did not guess correctly within 6 attempts, ' + name + '. Yuval has visited ' + states[0] + ', ' + states[1] + ', ' + states[2] + ', ' + states[3] + ', ' + states[4] + ', and ' + states[5] + '. Better luck next time!');
+  } else if (isCorrect) {
+    console.log(name + ' chose ' + states[guesses] + ' correctly!');
+    if (guesses > 1) {
+      alert('That is correct, ' + name + '! You took ' + guesses + ' guesses to correctly choose a state Yuval has visited. He has visited ' + states[0] + ', ' + states[1] + ', ' + states[2] + ', ' + states[3] + ', ' + states[4] + ', and ' + states[5] + '.');
+    } else {
+      alert('That is correct, ' + name + '! You only took ' + guesses + ' guess to correctly choose a state Yuval has visited. He has visited ' + states[0] + ', ' + states[1] + ', ' + states[2] + ', ' + states[3] + ', ' + states[4] + ', and ' + states[5] + '.');
+    }
+  } else {
+    alert(incorrectMsg);
+    console.log(name + ' chose incorrectly. He guessed ' + stateGuess);
   }
 }
 
