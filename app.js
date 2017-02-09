@@ -9,7 +9,6 @@ console.log('\n');
 
 //make default message for else console.log statement to keep it DRY
 
-/*
 var firstAnswer = prompt('Thanks, ' + name + '!' + ' Is Yuval an Israeli citizen?').toLowerCase();
 console.log('1) Asked ' + name + ' if Yuval is an Israeli citizen (true).');
 
@@ -31,10 +30,10 @@ console.log('2) Asked ' + name + ' if Yuval has a degree from a higher learning 
 
 if (secondAnswer === 'yes' || secondAnswer === 'y') {
   alert('That is incorrect, ' + name + ' (but you made me blush, if that helps) Libraries and the internet are free!');
-  console.log(name +  ' answered incorrectly!');
+  console.log(name + ' answered incorrectly!');
 } else if (secondAnswer === 'no' || secondAnswer === 'n') {
   alert('That is correct, ' + name + '! (much to the chagrin of my parents)');
-  console.log(name +  ' answered correctly!');
+  console.log(name + ' answered correctly!');
 } else {
   alert('Come on, ' + name + '! Please enter a valid "yes" or "no" response.');
   console.log(name + ' responded unintelligbly! For shame.');
@@ -47,7 +46,7 @@ console.log('3) Asked ' + name + ' if Yuval has been to India (true).');
 
 if (thirdAnswer === 'yes' || thirdAnswer === 'y') {
   alert('That is correct, ' + name + '! Several times -- including an illegal border crossing...');
-  console.log(name +  ' answered correctly!');
+  console.log(name + ' answered correctly!');
 } else if (thirdAnswer === 'no' || thirdAnswer === 'n') {
   alert('That is incorrect, ' + name + '. Yuval is quite the cosmopolitan mofo ;)');
   console.log(name + ' answered incorrectly!');
@@ -94,7 +93,7 @@ console.log('\n');
 //sixth question
 alert('Can you guess the number I am thinking of? You will have four opportunities to guess this number.');
 var myNum = 73;
-console.log('Asked ' + name + ' to guess my number (' + myNum + ').');
+console.log('6) Asked ' + name + ' to guess my number (' + myNum + ').');
 
 
 for (var i = 0; i < 4; i++) {
@@ -107,15 +106,18 @@ for (var i = 0; i < 4; i++) {
   if (userNum === myNum) {
     i++;
     //fix this to handle user answering correctly on first guess (singular)
+    console.log(name + ' guessed correctly in ' + i + ' guess');
     msg += 'You guessed correctly in ' + i + ' guesses, ' + name + '!';
     alert(msg);
     break;
   //number is too high
   } else if (userNum > myNum) {
+    console.log(name + ' guessed too high. Their guess: ' + userNum);
     msg += 'Your guess is too high, ' + name + '!';
     alert(msg);
   //number is too low
   } else if (userNum < myNum) {
+    console.log(name + ' guessed too low. Their guess: ' + userNum);
     msg += 'Your guess is too low, ' + name + '!';
     alert(msg);
   //not a number
@@ -126,22 +128,16 @@ for (var i = 0; i < 4; i++) {
 
   if (i === 3) {
     alert('You are all out of guesses :( Better luck next time!');
+    console.log(name + ' was not able to guess the number in ' + (i + 1) + ' guesses');
   }
 }
 
 console.log('\n');
 
-*/
-// As a developer, I want to add a seventh question to my guessing game that has multiple possible correct answers that are stored in an array. For instance, "Can you guess a state that I have lived in besides Washington?", so that even more of my programming skills are showcased. For now, I will structure this question so that the user has six tries to get a single correct answer, and upon using up those tries OR getting a correct answer, displays a message to the user indicating all of the possible correct answers.
-
-// As a developer, I want to keep a tally of the total number of correct answers given by the user, and at the end of the game, tell the user how well they did with a personalized custom message that includes the number of correct answers and also addresses the user by name, e.g. "You got 4 out of 7 questions correct, Bobbi! Better luck next time."
-
-
 //seventh question
-
 var states = ['Pennsylvania', 'California', 'Arizona', 'Washington', 'Virginia', 'Ohio'];
 alert('Can you guess a state Yuval has visited, aside from Oregon? You will have six opportunities to guess.');
-console.log('Asked ' + name + ' to guess a state Yuval has visited.');
+console.log('7) Asked ' + name + ' to guess a state Yuval has visited.');
 console.log('(States Yuval has visited: ' + states[0] + ', ' + states[1] + ', ' + states[2] + ', ' + states[3] + ', ' + states[4] + ', and ' + states[5] + ')');
 
 console.log('\n');
