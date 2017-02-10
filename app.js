@@ -48,21 +48,25 @@ function secondFunction() {
 
 
 
-// console.log('\n');
+console.log('\n');
 
-// var thirdAnswer = prompt('Has Yuval been to the magical land of India?').toLowerCase();
-// console.log('3) Asked ' + name + ' if Yuval has been to India (true).');
+function thirdFunction() {
+  var thirdAnswer = prompt('Has Yuval been to the magical land of India?').toLowerCase();
+  console.log('3) Asked ' + name + ' if Yuval has been to India (true).');
 
-// if (thirdAnswer === 'yes' || thirdAnswer === 'y') {
-//   alert('That is correct, ' + name + '! Several times -- including an illegal border crossing...');
-//   console.log(name + ' answered correctly!');
-// } else if (thirdAnswer === 'no' || thirdAnswer === 'n') {
-//   alert('That is incorrect, ' + name + '. Yuval is quite the cosmopolitan mofo ;)');
-//   console.log(name + ' answered incorrectly!');
-// } else {
-//   alert('Come on, ' + name + '! Please enter a valid "yes" or "no" response.');
-//   console.log(name + ' responded unintelligbly! For shame.');
-// }
+  if (thirdAnswer === 'yes' || thirdAnswer === 'y') {
+    alert('That is correct, ' + name + '! Several times -- including an illegal border crossing...');
+    console.log(name + ' answered correctly!');
+  } else if (thirdAnswer === 'no' || thirdAnswer === 'n') {
+    alert('That is incorrect, ' + name + '. Yuval is quite the cosmopolitan mofo ;)');
+    console.log(name + ' answered incorrectly!');
+  } else {
+    alert('Come on, ' + name + '! Please enter a valid "yes" or "no" response.');
+    console.log(name + ' responded unintelligbly! For shame.');
+  }
+}
+
+
 
 // console.log('\n');
 
@@ -186,4 +190,5 @@ function secondFunction() {
 
 //firstFunction();
 //secondFunction();
+//thirdFunction();
 
