@@ -88,22 +88,24 @@ function fourthFunction() {
 
 
 
+console.log('\n');
 
-// console.log('\n');
+function fifthFunction() {
+  var fifthAnswer = prompt('Has Yuval met some of the biggest names in CS/programming?').toLowerCase();
+  console.log('5) Asked ' + name + ' if Yuval has met some of the biggest names in CS/programming (true).');
 
-// var fifthAnswer = prompt('Has Yuval met some of the biggest names in CS/programming?').toLowerCase();
-// console.log('5) Asked ' + name + ' if Yuval has met some of the biggest names in CS/programming (true).');
+  if (fifthAnswer === 'yes' || fifthAnswer === 'y') {
+    alert('That is correct, ' + name + '! Yuval used to work for Specimen Magazine, where he was lucky enough to shoehorn his way into the Turing Award Ceremony. He interviewed the recipient of the award, Judea Pearl, as well as Leonard Kleinrock.');
+    console.log(name + ' answered correctly!');
+  } else if (fifthAnswer === 'no' || fifthAnswer === 'n') {
+    alert('How rude, ' + name + '! Yuval used to work for Specimen Magazine, where he was lucky enough to shoehorn his way into the Turing Award Ceremony. He interviewed the recipient of the award, Judea Pearl, as well as Leonard Kleinrock.');
+    console.log(name + ' answered incorrectly!');
+  } else {
+    alert('Come on, ' + name + '! Please enter a valid "yes" or "no" response.');
+    console.log(name + ' responded unintelligbly! For shame.');
+  }
+}
 
-// if (fifthAnswer === 'yes' || fifthAnswer === 'y') {
-//   alert('That is correct, ' + name + '! Yuval used to work for Specimen Magazine, where he was lucky enough to shoehorn his way into the Turing Award Ceremony. He interviewed the recipient of the award, Judea Pearl, as well as Leonard Kleinrock.');
-//   console.log(name + ' answered correctly!');
-// } else if (fifthAnswer === 'no' || fifthAnswer === 'n') {
-//   alert('How rude, ' + name + '! Yuval used to work for Specimen Magazine, where he was lucky enough to shoehorn his way into the Turing Award Ceremony. He interviewed the recipient of the award, Judea Pearl, as well as Leonard Kleinrock.');
-//   console.log(name + ' answered incorrectly!');
-// } else {
-//   alert('Come on, ' + name + '! Please enter a valid "yes" or "no" response.');
-//   console.log(name + ' responded unintelligbly! For shame.');
-// }
 
 // console.log('\n');
 
@@ -197,4 +199,5 @@ function fourthFunction() {
 //secondFunction();
 //thirdFunction();
 //fourthFunction();
+//fifthFunction();
 
