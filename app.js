@@ -107,50 +107,56 @@ function fifthFunction() {
 }
 
 
-// console.log('\n');
+console.log('\n');
 
 
-// //sixth question
-// alert('Can you guess the number I am thinking of? You will have four opportunities to guess this number.');
-// var myNum = 73;
-// console.log('6) Asked ' + name + ' to guess my number (' + myNum + ').');
+
+//sixth question
+
+function sixthFunction() {
+  alert('Can you guess the number I am thinking of? You will have four opportunities to guess this number.');
+  var myNum = 73;
+  console.log('6) Asked ' + name + ' to guess my number (' + myNum + ').');
 
 
-// for (var i = 0; i < 4; i++) {
-//   var userNum = prompt('Please enter your guess here:');
-//   userNum = Number(userNum);
-//   console.log(name + ' guessed: ' + userNum);
-//   var msg = '';
+  for (var i = 0; i < 4; i++) {
+    var userNum = prompt('Please enter your guess here:');
+    userNum = Number(userNum);
+    console.log(name + ' guessed: ' + userNum);
+    var msg = '';
 
-//   //answer is correct
-//   if (userNum === myNum) {
-//     i++;
-//     //fix this to handle user answering correctly on first guess (singular)
-//     console.log(name + ' guessed correctly in ' + i + ' guess');
-//     msg += 'You guessed correctly in ' + i + ' guesses, ' + name + '!';
-//     alert(msg);
-//     break;
-//   //number is too high
-//   } else if (userNum > myNum) {
-//     console.log(name + ' guessed too high. Their guess: ' + userNum);
-//     msg += 'Your guess is too high, ' + name + '!';
-//     alert(msg);
-//   //number is too low
-//   } else if (userNum < myNum) {
-//     console.log(name + ' guessed too low. Their guess: ' + userNum);
-//     msg += 'Your guess is too low, ' + name + '!';
-//     alert(msg);
-//   //not a number
-//   } else {
-//     alert('Come on, ' + name + '! Please enter a valid number.');
-//     console.log(name + ' did not provide a number! For shame.');
-//   }
+    //answer is correct
+    if (userNum === myNum) {
+      i++;
+      //fix this to handle user answering correctly on first guess (singular)
+      console.log(name + ' guessed correctly in ' + i + ' guess');
+      msg += 'You guessed correctly in ' + i + ' guesses, ' + name + '!';
+      alert(msg);
+      break;
+    //number is too high
+    } else if (userNum > myNum) {
+      console.log(name + ' guessed too high. Their guess: ' + userNum);
+      msg += 'Your guess is too high, ' + name + '!';
+      alert(msg);
+    //number is too low
+    } else if (userNum < myNum) {
+      console.log(name + ' guessed too low. Their guess: ' + userNum);
+      msg += 'Your guess is too low, ' + name + '!';
+      alert(msg);
+    //not a number
+    } else {
+      alert('Come on, ' + name + '! Please enter a valid number.');
+      console.log(name + ' did not provide a number! For shame.');
+    }
 
-//   if (i === 3) {
-//     alert('You are all out of guesses :( Better luck next time!');
-//     console.log(name + ' was not able to guess the number in ' + (i + 1) + ' guesses');
-//   }
-// }
+    if (i === 3) {
+      alert('You are all out of guesses :( Better luck next time!');
+      console.log(name + ' was not able to guess the number in ' + (i + 1) + ' guesses');
+    }
+  }
+
+}
+
 
 // console.log('\n');
 
@@ -200,4 +206,5 @@ function fifthFunction() {
 //thirdFunction();
 //fourthFunction();
 //fifthFunction();
+//sixthFunction();
 
