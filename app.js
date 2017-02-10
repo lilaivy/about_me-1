@@ -67,22 +67,27 @@ function thirdFunction() {
 }
 
 
+console.log('\n');
 
-// console.log('\n');
+function fourthFunction() {
 
-// var fourthAnswer = prompt('Has Yuval ever been published?').toLowerCase();
-// console.log('4) Asked ' + name + ' if Yuval has ever been published (true).');
+  var fourthAnswer = prompt('Has Yuval ever been published?').toLowerCase();
+  console.log('4) Asked ' + name + ' if Yuval has ever been published (true).');
 
-// if (fourthAnswer === 'yes' || fourthAnswer === 'y') {
-//   alert('That is correct, ' + name + '! Yuval wrote short fiction under the alias The Marquis de Sheric.');
-//   console.log(name + ' answered correctly!');
-// } else if (fourthAnswer === 'no' || fourthAnswer === 'n') {
-//   alert('That is incorrect, ' + name + '. Yuval wrote short fiction under the alias The Marquis de Sheric. HAVE SOME RESPECT.');
-//   console.log(name + ' answered incorrectly!');
-// } else {
-//   alert('Come on, ' + name + '! Please enter a valid "yes" or "no" response.');
-//   console.log(name + ' responded unintelligbly! For shame.');
-// }
+  if (fourthAnswer === 'yes' || fourthAnswer === 'y') {
+    alert('That is correct, ' + name + '! Yuval wrote short fiction under the alias The Marquis de Sheric.');
+    console.log(name + ' answered correctly!');
+  } else if (fourthAnswer === 'no' || fourthAnswer === 'n') {
+    alert('That is incorrect, ' + name + '. Yuval wrote short fiction under the alias The Marquis de Sheric. HAVE SOME RESPECT.');
+    console.log(name + ' answered incorrectly!');
+  } else {
+    alert('Come on, ' + name + '! Please enter a valid "yes" or "no" response.');
+    console.log(name + ' responded unintelligbly! For shame.');
+  }
+}
+
+
+
 
 // console.log('\n');
 
@@ -191,4 +196,5 @@ function thirdFunction() {
 //firstFunction();
 //secondFunction();
 //thirdFunction();
+//fourthFunction();
 
