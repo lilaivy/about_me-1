@@ -158,53 +158,60 @@ function sixthFunction() {
 }
 
 
-// console.log('\n');
+console.log('\n');
 
-// //seventh question
-// var states = ['Pennsylvania', 'California', 'Arizona', 'Washington', 'Virginia', 'Ohio'];
-// alert('Can you guess a state Yuval has visited, aside from Oregon? You will have six opportunities to guess.');
-// console.log('7) Asked ' + name + ' to guess a state Yuval has visited.');
-// console.log('(States Yuval has visited: ' + states[0] + ', ' + states[1] + ', ' + states[2] + ', ' + states[3] + ', ' + states[4] + ', and ' + states[5] + ')');
+//seventh question
 
-// console.log('\n');
+function seventhFunction() {
+  var states = ['Pennsylvania', 'California', 'Arizona', 'Washington', 'Virginia', 'Ohio'];
+  alert('Can you guess a state Yuval has visited, aside from Oregon? You will have six opportunities to guess.');
+  console.log('7) Asked ' + name + ' to guess a state Yuval has visited.');
+  console.log('(States Yuval has visited: ' + states[0] + ', ' + states[1] + ', ' + states[2] + ', ' + states[3] + ', ' + states[4] + ', and ' + states[5] + ')');
 
-// var guesses = 0;
-// var isCorrect = false;
+  console.log('\n');
 
-// var incorrectMsg = 'That is incorrect, ' + name + '. Please guess again.';
+  var guesses = 0;
+  var isCorrect = false;
 
-// while (isCorrect !== true) {
-//   guesses++;
-//   var stateGuess = prompt('Please enter your guess here: ').toLowerCase();
-//   stateGuess = stateGuess[0].toUpperCase() + stateGuess.slice(1);
+  var incorrectMsg = 'That is incorrect, ' + name + '. Please guess again.';
 
-//   for (var j = 0; j < states.length; j++) {
-//     if (stateGuess === states[j]) {
-//       isCorrect = true;
-//     }
-//   }
+  while (isCorrect !== true) {
+    guesses++;
+    var stateGuess = prompt('Please enter your guess here: ').toLowerCase();
+    stateGuess = stateGuess[0].toUpperCase() + stateGuess.slice(1);
 
-//   if (guesses === 6) {
-//     isCorrect = true;
-//     console.log(name + ' did not guess correctly within 6 attempts.');
-//     alert('You did not guess correctly within 6 attempts, ' + name + '. Yuval has visited ' + states[0] + ', ' + states[1] + ', ' + states[2] + ', ' + states[3] + ', ' + states[4] + ', and ' + states[5] + '. Better luck next time!');
-//   } else if (isCorrect) {
-//     console.log(name + ' chose ' + states[guesses] + ' correctly!');
-//     if (guesses > 1) {
-//       alert('That is correct, ' + name + '! You took ' + guesses + ' guesses to correctly choose a state Yuval has visited. He has visited ' + states[0] + ', ' + states[1] + ', ' + states[2] + ', ' + states[3] + ', ' + states[4] + ', and ' + states[5] + '.');
-//     } else {
-//       alert('That is correct, ' + name + '! You only took ' + guesses + ' guess to correctly choose a state Yuval has visited. He has visited ' + states[0] + ', ' + states[1] + ', ' + states[2] + ', ' + states[3] + ', ' + states[4] + ', and ' + states[5] + '.');
-//     }
-//   } else {
-//     alert(incorrectMsg);
-//     console.log(name + ' chose incorrectly. He guessed ' + stateGuess);
-//   }
-// }
+    for (var j = 0; j < states.length; j++) {
+      if (stateGuess === states[j]) {
+        isCorrect = true;
+      }
+    }
 
-//firstFunction();
-//secondFunction();
-//thirdFunction();
-//fourthFunction();
-//fifthFunction();
-//sixthFunction();
+    if (guesses === 6) {
+      isCorrect = true;
+      console.log(name + ' did not guess correctly within 6 attempts.');
+      alert('You did not guess correctly within 6 attempts, ' + name + '. Yuval has visited ' + states[0] + ', ' + states[1] + ', ' + states[2] + ', ' + states[3] + ', ' + states[4] + ', and ' + states[5] + '. Better luck next time!');
+    } else if (isCorrect) {
+      console.log(name + ' chose ' + states[guesses] + ' correctly!');
+      if (guesses > 1) {
+        alert('That is correct, ' + name + '! You took ' + guesses + ' guesses to correctly choose a state Yuval has visited. He has visited ' + states[0] + ', ' + states[1] + ', ' + states[2] + ', ' + states[3] + ', ' + states[4] + ', and ' + states[5] + '.');
+      } else {
+        alert('That is correct, ' + name + '! You only took ' + guesses + ' guess to correctly choose a state Yuval has visited. He has visited ' + states[0] + ', ' + states[1] + ', ' + states[2] + ', ' + states[3] + ', ' + states[4] + ', and ' + states[5] + '.');
+      }
+    } else {
+      alert(incorrectMsg);
+      console.log(name + ' chose incorrectly. He guessed ' + stateGuess);
+    }
+  }
+
+}
+
+
+
+firstFunction();
+secondFunction();
+thirdFunction();
+fourthFunction();
+fifthFunction();
+sixthFunction();
+seventhFunction();
 
