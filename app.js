@@ -7,7 +7,7 @@ console.log('User name is: ' + name);
 
 console.log('\n');
 
-//make default message for else console.log statement to keep it DRY
+// make default message for else console.log statement to keep it DRY
 
 function firstFunction() {
 
@@ -28,21 +28,25 @@ function firstFunction() {
 }
 
 
-// console.log('\n');
+console.log('\n');
 
-// var secondAnswer = prompt('Does Yuval have a degree from a higher learning institution?').toLowerCase();
-// console.log('2) Asked ' + name + ' if Yuval has a degree from a higher learning institution (false).');
+function secondFunction() {
+  var secondAnswer = prompt('Does Yuval have a degree from a higher learning institution?').toLowerCase();
+  console.log('2) Asked ' + name + ' if Yuval has a degree from a higher learning institution (false).');
 
-// if (secondAnswer === 'yes' || secondAnswer === 'y') {
-//   alert('That is incorrect, ' + name + ' (but you made me blush, if that helps) Libraries and the internet are free!');
-//   console.log(name + ' answered incorrectly!');
-// } else if (secondAnswer === 'no' || secondAnswer === 'n') {
-//   alert('That is correct, ' + name + '! (much to the chagrin of my parents)');
-//   console.log(name + ' answered correctly!');
-// } else {
-//   alert('Come on, ' + name + '! Please enter a valid "yes" or "no" response.');
-//   console.log(name + ' responded unintelligbly! For shame.');
-// }
+  if (secondAnswer === 'yes' || secondAnswer === 'y') {
+    alert('That is incorrect, ' + name + ' (but you made me blush, if that helps) Libraries and the internet are free!');
+    console.log(name + ' answered incorrectly!');
+  } else if (secondAnswer === 'no' || secondAnswer === 'n') {
+    alert('That is correct, ' + name + '! (much to the chagrin of my parents)');
+    console.log(name + ' answered correctly!');
+  } else {
+    alert('Come on, ' + name + '! Please enter a valid "yes" or "no" response.');
+    console.log(name + ' responded unintelligbly! For shame.');
+  }
+}
+
+
 
 // console.log('\n');
 
@@ -181,4 +185,5 @@ function firstFunction() {
 // }
 
 //firstFunction();
+//secondFunction();
 
